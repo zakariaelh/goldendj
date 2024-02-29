@@ -33,5 +33,5 @@ docker run -dp 6379:6379 -it redis/redis-stack:latest
 
 ### Run the server with uvicorn 
 ```
-poetry run uvicorn main:app --port 3000
+uvicorn main:app  --port 3000 --reload
 ```
