@@ -7,9 +7,8 @@ import sys
 from fastapi import FastAPI
 from vocode.streaming.models.telephony import TwilioConfig
 from pyngrok import ngrok
-from vocode.streaming.telephony.config_manager.redis_config_manager import (
-    RedisConfigManager,
-)
+from vocode.streaming.telephony.config_manager.in_memory_config_manager import InMemoryConfigManager
+
 from vocode.streaming.models.message import BaseMessage
 from vocode.streaming.telephony.server.base import (
     TwilioInboundCallConfig,
@@ -36,9 +35,7 @@ logging.basicConfig()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-config_manager = RedisConfigManager(
-    logger=logger,
-)
+config_manager = InMemoryConfigManager()
 
 BASE_URL = os.getenv("BASE_URL")
 
