@@ -37,7 +37,7 @@ docker run -p 3000:3000 goldendj
 Now, you have a container running on port 3000. Remember that we opened this port to the public using `ngrok` during setup. 
 You can call the number now.
 
-## Run directry using python
+## Run directly using python
 
 ### Install poetry 
 Make sure you have poetry installed. Follow the instruction [here](https://python-poetry.org/docs/)
