@@ -1,3 +1,5 @@
+# Setup 
+
 ### Set up accounts
 You will need account with the following services: 
 - Deepgram
@@ -21,14 +23,33 @@ This returns a URL. We call the part excluding the `https://`  the `BASEURL`
 Fill the `.env.template` file with your values. <br>
 **Remember to rename it to `.env`**
 
+# Run goldendj 
+You have two options: 
+1. *(easy)* Run everything using Docker
+2. *(less easy)* Run python script directly
+
+## Run everything with Docker
+Build and run the container image. 
+```
+docker build -t goldendj .
+docker run -p 3000:3000 goldendj
+```
+Now, you have a container running on port 3000. Remember that we opened this port to the public using `ngrok` during setup. 
+You can call the number now.
+
+## Run directry using python
+
+### Install poetry 
+Make sure you have poetry installed. Follow the instruction [here](https://python-poetry.org/docs/)
+
+### Set up your virtual environment 
+```
+python3 -m venv env
+```
+
 ### Install dependencies
 ```
 poetry install
-```
-
-### Run Redis with Docker
-```
-docker run -dp 6379:6379 -it redis/redis-stack:latest
 ```
 
 ### Run the server with uvicorn 
