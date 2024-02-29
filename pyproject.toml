@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "telephony-app"
+name = "goldendj"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Zakaria El hjouji elhjouji.zakaria@gmail.com", "Omar Moussa moussa.omar.salim@gmail.com"]
 readme = "README.md"
 
 [tool.poetry.dependencies]

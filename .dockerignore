@@ -1,0 +1,6 @@
+audios/
+__pychache__/
+.env
+.env.template
+.gitignore
+docker-compose.yml
