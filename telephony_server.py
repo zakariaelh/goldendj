@@ -1,12 +1,8 @@
 # Standard library imports
 import logging
 import os
-import sys
 
-# Third-party imports
-from fastapi import FastAPI
 from vocode.streaming.models.telephony import TwilioConfig
-from pyngrok import ngrok
 from vocode.streaming.telephony.config_manager.in_memory_config_manager import InMemoryConfigManager
 
 from vocode.streaming.models.message import BaseMessage
@@ -37,7 +33,7 @@ logger.setLevel(logging.DEBUG)
 config_manager = InMemoryConfigManager()
 
 BASE_URL = os.getenv("BASE_URL")
-VOICE_ID = "nDLkfhgP1msRF4o1WsQE"
+VOICE_ID =  None # "nDLkfhgP1msRF4o1WsQE"
 INITIAL_MESSAGE = "Hello, how are you doing my friend?"
 PROMPT = """
 Initiate friendly conversation with an elderly user, focusing on their well-being, interests, and any music they might enjoy. Remember to keep the tone warm, respectful, and engaging. Ask about their day, any specific music they want to hear, and share a positive, uplifting message.

@@ -1,3 +1,8 @@
+# Introduction 
+
+GoldenDJ is an AI that you call over the phone to chat about anything, and more particularly, it can take song requests and play them for you over the phone. Request any song you want or you can give a vague description and it will give you suggestions. 
+
+
 # Setup 
 
 ### Set up accounts
