@@ -23,7 +23,7 @@ You have two options:
 ## Serverless hosting with Modal 
 - Install modal in your local environment. Modal will prompt you to set up an account *(pretty frictionless)* 
 ```
-pip install modal
+pip install modal==0.58.94
 ```
 - We will deploy the app twice as we need the deployment URL 
 ```
